@@ -10,7 +10,7 @@ class  Model {
         return this.schema.find(queryObj);
         }
     create(obj) {
-        let newObj = this.schema(obj)
+        let newObj = new this.schema(obj)
         return newObj.save();
     }
     update(_id, obj) {
